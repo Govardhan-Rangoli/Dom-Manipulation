@@ -1,3 +1,4 @@
+
 const openNav = document.getElementById("open")
 const closeNav = document.getElementById("close")
 
