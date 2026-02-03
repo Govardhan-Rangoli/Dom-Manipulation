@@ -1,10 +1,27 @@
 
 const openNav = document.getElementById("open")
 const closeNav = document.getElementById("close")
-
 const sideNavBar = document.querySelector(".sidenav")
+const mainSection = document.querySelectorAll(".main .section");
 
 closeNav.addEventListener('click', closeSideNavBar)
+loginButton.oncklick = showLogin
+
+function showLogin(){
+    sideNavBar.style.display = "none";
+    mainSection.forEach(function(item){
+        item.style.display = "none"
+    })
+    loginModal.style.display = "block" 
+}
+document.getElementById("closeBtn").addEventListener('click',hidelogin)
+function hidelogin(){
+    sideNavBar.style.display = "block";
+    mainSection.forEach(function(item){
+        item.style.display = "block"
+    })
+     loginModal.style.display = "none" 
+}
 
 function closeSideNavBar() {
     sideNavBar.classList.toggle("mango")

@@ -157,7 +157,10 @@ nav ul li:active {
 #loginBtn {
     cursor: pointer;
 }
-
+a{
+    text-decoration: none;
+    color: white;
+}
 .login-modal {
     display: none;
     position: fixed;
